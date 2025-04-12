@@ -14,7 +14,10 @@ body {
   filter: contrast(50%);
   transform: scale(1.2);
 }
-
+.grid {
+  display: grid;
+  grid-template-columns: 300px 300px;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/track-field.webp");
@@ -78,6 +81,10 @@ section {
 section img {
   max-width: 100%;
 }
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
 button {
   display: block;
   margin: 0 auto;
@@ -122,6 +129,10 @@ footer a {
     text-align: center;
     letter-spacing: 5px;
     font-size: 25px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 188px 188px;
   }
   button {
     font-size: 16px;
