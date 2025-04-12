@@ -16,7 +16,7 @@ body {
 }
 .grid {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: repeat(4, 150px);
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -132,7 +132,11 @@ footer a {
   }
   .grid {
     display: grid;
-    grid-template-columns: 188px 188px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .grid img {
+    border-radius: 10px;
   }
   button {
     font-size: 16px;
