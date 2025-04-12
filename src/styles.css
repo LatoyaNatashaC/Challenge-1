@@ -16,7 +16,16 @@ body {
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 150px);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 10px 0;
+}
+.grid img {
+  border-radius: 8px;
+  transition: all 150ms ease-in-out;
+}
+.grid img:hover {
+  transform: scale(2);
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -99,6 +108,11 @@ button:hover {
   background: #468966;
   cursor: pointer;
 }
+button a {
+  text-decoration: none;
+  color: black;
+}
+
 footer {
   text-align: center;
   margin: 10px 0;
