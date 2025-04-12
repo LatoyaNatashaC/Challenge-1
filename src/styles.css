@@ -1,10 +1,12 @@
-.body {
+body {
   font-family: "poppins";
+  background-color: #f5f1fe;
 }
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/track-field.webp");
@@ -42,9 +44,54 @@ header a {
   letter-spacing: 5px;
   background: white;
   text-decoration: none;
-  color: #272044;
+  color: black;
   padding: 16px 32px;
   display: inline-block;
+  border-radius: 6px;
+}
+header a:hover {
+  background: #468966;
+  cursor: pointer;
+}
+section h2 {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+
+section {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+section img {
+  max-width: 100%;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #468966;
+  background: white;
+  font-size: 24px;
+  border-radius: 6px;
+  padding: 10px 15px;
+  transition: all 150ms ease-in-out;
+}
+button:hover {
+  background: #468966;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  margin: 10px 0;
+  color: #468966;
+  font-size: 24px;
+}
+footer a {
+  text-decoration: none;
+  color: #468966;
 }
 @media (max-width: 900px) {
   header {
@@ -58,5 +105,19 @@ header a {
   }
   header h3 {
     font-size: 12px;
+  }
+  header a {
+    font-size: 15px;
+  }
+  section h2 {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 25px;
+  }
+  button {
+    font-size: 16px;
+  }
+  footer {
+    font-size: 10px;
   }
 }
